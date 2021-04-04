@@ -1,0 +1,6 @@
+.t-a {
+    text-decoration: none;
+}
+.t-a:hover {
+    filter: brightness(90%);
+}

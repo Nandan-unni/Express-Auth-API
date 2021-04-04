@@ -1,0 +1,20 @@
+.account-card {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 320px;
+    padding: 0 20px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.account-card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.account-card svg {
+    cursor: pointer;
+}

@@ -1,0 +1,12 @@
+@media only screen and (max-width: 500px) {
+    .tweet-body-panel {
+        width: 100%;
+    }
+    .tweet-body-panel-item p {
+        margin-left: -5px;
+    }
+    .tbp-stud {
+        height: 35px;
+        width: 35px;
+    }
+}

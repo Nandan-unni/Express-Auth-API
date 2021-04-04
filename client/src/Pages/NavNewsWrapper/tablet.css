@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1025px) {
+    .nn-news {
+        display: none;
+    }
+    .nn-navbar {
+        width: 75px;
+    }   
+    .nn-child {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1025px) {
+    .nn-child {
+        width: 800px;
+        z-index: 101;
+    }
+    .nn-child-head {
+        width: 798px;
+    }
+}

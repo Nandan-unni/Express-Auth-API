@@ -1,0 +1,14 @@
+.nn-child-head-data h3 {
+    font-size: 16px;
+}
+.nn-child-head-data p {
+    font-size: 13px;
+    color: gray;
+}
+.profile-data-main-blocks {
+    display: flex;
+}
+.profile-data-main-block {
+    display: flex;
+    align-items: center;
+}

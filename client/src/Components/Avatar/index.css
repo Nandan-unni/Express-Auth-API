@@ -1,0 +1,18 @@
+.t-avatar img, .t-avatar {
+    background-color: gray;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+}
+.t-avatar-medium, .t-avatar-medium img {
+    height: 50px;
+    width: 50px;
+}
+.t-avatar-small, .t-avatar-small img {
+    height: 40px;
+    width: 40px;
+}

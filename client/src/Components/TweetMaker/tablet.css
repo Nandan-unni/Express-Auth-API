@@ -1,0 +1,13 @@
+@media only screen and (max-width: 1025px) {
+    .tm-body-foot-panel {
+        width: 30%;
+    }
+    .tm-body-foot-panel svg {
+        height: 22px;
+        width: 22px;
+    }
+    .tm-body-foot-panel-item {
+        width: 35px;
+        height: 35px;
+    }
+}

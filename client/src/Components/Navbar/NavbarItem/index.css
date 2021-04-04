@@ -1,0 +1,25 @@
+.navbar-item {
+    width: fit-content;
+    border-radius: 100px;
+    padding: 15px 30px 15px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.navbar-item a {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+.navbar-item svg {
+    height: 30px;
+    width: auto;
+}
+.navbar-item p {
+    font-weight: 600;
+    padding-left: 16px;
+}
+.navbar-item-desktop-hidden {
+    display: none;
+}
