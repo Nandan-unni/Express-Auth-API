@@ -1,5 +1,5 @@
 @media only screen and (max-width: 500px) {
-    .profile-data {
-        margin-top: -62.5px;
+    .signin-content {
+        width: 80%;
     }
 }

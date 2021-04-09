@@ -68,6 +68,7 @@ const Navbar = (props) => {
                 label="Display" 
                 mobileHidden
             />
+            {/* document.documentElement.style.setProperty('--your-variable', '#YOURCOLOR'); */}
             <NavbarItem 
                 index={7}
                 link="/" 

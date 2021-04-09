@@ -1,0 +1,9 @@
+@media only screen and (max-width: 1025px) {
+    .lan-right-box {
+        width: 75%;
+    }
+    .lan-left-icon svg {
+        height: 250px !important;
+        width: 250px !important;
+    }
+}

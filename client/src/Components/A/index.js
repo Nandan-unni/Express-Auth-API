@@ -8,13 +8,22 @@ import "./tablet.css";
 const A = (props) => {
     const { shade } = useContext(ShadeContext);
     return (
-        <Link 
-            to={props.href} 
-            className={`t-a ${props.superClass}`}
-            style={{color: shade[0], ...props.style}}
-        >
-                { props.children }
-        </Link>
+        props.type === "ext" ?
+            <a 
+                href={props.href} 
+                className={`t-a ${props.superClass}`}
+                style={{color: shade[0], ...props.style}}
+            >
+                    { props.children }
+            </a>
+        :
+            <Link 
+                to={props.href} 
+                className={`t-a ${props.superClass}`}
+                style={{color: shade[0], ...props.style}}
+            >
+                    { props.children }
+            </Link>
     );
 }
 

@@ -8,6 +8,10 @@
     color: white;
     overflow: hidden;
 }
+.t-avatar-large, .t-avatar-large img {
+    height: 125px;
+    width: 125px;
+}
 .t-avatar-medium, .t-avatar-medium img {
     height: 50px;
     width: 50px;

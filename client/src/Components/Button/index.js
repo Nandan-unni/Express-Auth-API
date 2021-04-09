@@ -36,7 +36,8 @@ const Button = (props) => {
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
         >
-            { props.label }
+            {props.img ? <img src={props.img} alt="ButtonLogo" /> : <></>}
+            {props.label}
         </button>
     </Link>
 }

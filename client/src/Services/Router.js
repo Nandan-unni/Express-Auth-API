@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Test from "../Pages/Profile";
+import Test from "../Pages/Signup";
 import Providers from "./Providers";
 
 const Router = () => {

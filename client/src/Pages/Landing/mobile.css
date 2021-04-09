@@ -1,0 +1,13 @@
+@media only screen and (max-width: 500px) {
+    .landing {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .lan-left, .lan-right {
+        width: 100%;
+    }
+    .lan-left {
+        margin-top: 40px;
+    }
+}
