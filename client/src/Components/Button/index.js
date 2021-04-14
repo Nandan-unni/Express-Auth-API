@@ -26,13 +26,13 @@ const Button = (props) => {
     }
     
     let btnClassName = `t-button ${props.superClass} t-button-${props.type}`
-    btnClassName += ` t-button-${props.img ? `img` : `withoutimg`}`
     btnClassName += ` t-button-${props.disabled ? `disabled` : `abled`}`
 
     return <Link href={ props.href }>
         <button 
             className={btnClassName}
             style={ props.type === "solid" ? solidStyle : liquidStyle }
+            onClick={props.onClick}
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
         >

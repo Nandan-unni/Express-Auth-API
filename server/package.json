@@ -1,31 +1,24 @@
 {
-  "name": "nodejs-auth-api",
+  "name": "twitter-clone-server",
   "version": "1.0.0",
-  "description": "Authentication API using Nodejs",
-  "main": "server.js",
+  "description": "Clone of twitter server",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nandan-unni/Nodejs-Auth-API.git"
-  },
-  "author": "nandanunni",
+  "author": "Nandanunni",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nandan-unni/Nodejs-Auth-API/issues"
-  },
-  "homepage": "https://github.com/nandan-unni/Nodejs-Auth-API#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
-    "mongoose": "^5.10.9",
-    "nodemailer": "^6.4.14",
-    "passport": "^0.4.1",
-    "passport-local": "^1.0.0",
-    "passport-local-mongoose": "^6.0.1"
+    "mongoose": "^5.12.3",
+    "passport": "^0.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }

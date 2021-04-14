@@ -12,6 +12,11 @@
     border-radius: 15px;
     background-color: white;
 }
+.signup-google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .signup-content-top {
     display: flex;
     color: transparent;
@@ -25,6 +30,7 @@
 }
 .signup-content h2 {
     font-size: 24px;
+    padding-bottom: 10px;
 }
 .signup-content p {
     color: gray;
