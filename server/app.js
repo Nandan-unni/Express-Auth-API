@@ -11,14 +11,15 @@ const User = require('./models/user.model')
 
 
 //Connecting to the database
-const DB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/twitter-clone";
+const DB_URI = process.env.MONGODB_URI || "mongodb+srv://argon:tcmern@nebula.5hkzx.mongodb.net/TvitterDB?retryWrites=true&w=majority";
 mongoose.connect(DB_URI, {
         useNewUrlParser: true,
         useFindAndModify: false,
+        useCreateIndex: true,
         useUnifiedTopology: true
     })
     .then(db => console.log("Connected to DataBase ->", db.connection.name))
-    .catch(err => console.log("DataBase connection failure ->", err.name)
+    .catch(err => console.log("DataBase connection failure ->", err)
 );
 
 

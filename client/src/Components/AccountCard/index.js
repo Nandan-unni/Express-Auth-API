@@ -7,7 +7,7 @@ import Avatar from "../Avatar";
 import { useContext, useState } from "react";
 import { ShadeContext } from "../../Contexts/ShadeContext";
 
-const AccountCard = (props) => {
+const AccountCard = ({account, ...props}) => {
 
     const [hovering, setHovering] = useState(false);
     const { shade } = useContext(ShadeContext);
@@ -21,7 +21,7 @@ const AccountCard = (props) => {
         <Avatar size="small" />
         <div className="account-card-body">
             <div className="account-card-body-data">
-                <h3>TestUserTwo</h3>
+                <h3>jh</h3>
                 <p>@testuser_2</p>
             </div>
             {

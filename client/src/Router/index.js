@@ -1,15 +1,19 @@
 import { BrowserRouter, Switch } from "react-router-dom";
-import Test from "../Pages/Signup";
+import Signup from "../Pages/Signup";
+import Home from "../Pages/Home";
+import Profile from "../Pages/Profile";
 import Providers from "../Services/Providers";
-// import PublicRoute from "./PrivateRoute";
-// import PrivateRoute from "./PublicRoute";
+import PublicRoute from "./PublicRoute";
+import PrivateRoute from "./PrivateRoute";
 import ProtectedRoute from "./ProtectedRoute";
 
 const Router = () => {
     return <Providers>
         <BrowserRouter>
             <Switch>
-                <ProtectedRoute path="/" component={Test} />
+                <PublicRoute exact path="/" component={Signup} />
+                <PrivateRoute exact path="/home" component={Home} />
+                <ProtectedRoute exact path="/:username" component={Profile} />
             </Switch>
         </BrowserRouter>
     </Providers>

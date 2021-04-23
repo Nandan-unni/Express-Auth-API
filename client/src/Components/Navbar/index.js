@@ -16,10 +16,16 @@ import {
     PersonRounded, PersonOutlineRounded, 
     MoreHorizRounded, Add
 } from "@material-ui/icons";
+
 import Icon from "../Icon";
 import Avatar from "../Avatar";
+import { useContext } from "react";
+import { UserContext } from "../../Contexts/UserContext";
 
 const Navbar = (props) => {
+
+    const { user, isLoading } = useContext(UserContext);
+
     return <div className={`navbar ${props.superClass}`} id="navbar" >
         <div className="navbar-items">
             <Icon superClass="navbar-t-icon" />
@@ -32,7 +38,7 @@ const Navbar = (props) => {
             />
             <NavbarItem 
                 index={2}
-                link="/" 
+                link="/"
                 icon={SearchOutlined} 
                 filledIcon={SearchRounded} 
                 label="Search"
@@ -46,21 +52,21 @@ const Navbar = (props) => {
                 label="Explore" 
                 mobileHidden
             />
-            <NavbarItem 
+            { !isLoading && <NavbarItem 
                 index={4}
                 link="/" 
                 icon={NotificationsOutlined} 
                 filledIcon={NotificationsRounded} 
                 label="Notifications" 
-            />
-            <NavbarItem 
+            />}
+            { !isLoading && <NavbarItem
                 index={5}
                 link="/" 
                 icon={MailOutlineRounded} 
                 filledIcon={MailRounded} 
                 label="Messages" 
-            />
-            <NavbarItem 
+            />}
+            <NavbarItem
                 index={6}
                 link="/" 
                 icon={PaletteOutlined} 
@@ -69,14 +75,14 @@ const Navbar = (props) => {
                 mobileHidden
             />
             {/* document.documentElement.style.setProperty('--your-variable', '#YOURCOLOR'); */}
-            <NavbarItem 
+            { !isLoading && <NavbarItem
                 index={7}
                 link="/" 
                 icon={PersonOutlineRounded} 
                 filledIcon={PersonRounded} 
                 label="Profile" 
                 mobileHidden
-            />
+            />}
             <NavbarItem 
                 index={8}
                 link="/" 
@@ -85,15 +91,15 @@ const Navbar = (props) => {
                 label="More" 
                 mobileHidden
             />
-            <Button 
+            { !isLoading && <Button 
                 type="solid" 
                 label={<><Add /><p>Tweet</p></>} 
                 superClass="navbar-t-button" 
                 width="220px" 
-            />
+            />}
         </div>
-        <AccountCard type="self" superClass="navbar-user-card" />
-        <Avatar size="medium" superClass="navbar-user-icon" />
+        { user && <AccountCard type="self" account={user} superClass="navbar-user-card" /> }
+        { user && <Avatar size="medium" img={user.image} superClass="navbar-user-icon" /> }
     </div>
 }
 

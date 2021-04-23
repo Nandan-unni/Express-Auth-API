@@ -14,13 +14,12 @@ import { useContext } from "react";
 import { UserContext} from "../../Contexts/UserContext"
 
 
-const BaseP = () => {
+const Signup = () => {
 
     const { setUserId, setIsLoggedIn } = useContext(UserContext);
 
     const handleGoogleSignup = async () => {
         await signInWithGoogle();
-        console.log(auth.currentUser);
         await axios.post(`${API_DOMAIN}/user/create`, auth.currentUser);
         setUserId(auth.currentUser.uid);
         setIsLoggedIn(true);
@@ -61,4 +60,4 @@ const BaseP = () => {
     </div>
 }
 
-export default BaseP;
+export default Signup;
