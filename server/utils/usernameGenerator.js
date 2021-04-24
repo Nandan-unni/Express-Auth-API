@@ -20,6 +20,6 @@ exports.generateUsername = async (name = "") => {
         if (!userExists) username = checkname + i;
         i++;
     }
-    console.log(`Username algorithm : ${username}`)
+    console.log(`Username algorithm : ${username}`);
     return username;
 }
